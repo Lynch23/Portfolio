@@ -1,0 +1,1 @@
+This repository holds all my projects built while learning Web Development. Over a period of two and aa half years, I have leart and worked with HTML5, CSS, Javascript ES6, and CSS frameworks Bootstrap and Bulma. I have a year of experience building  with ReactJS. This repository will continue to be updated with future projects.
