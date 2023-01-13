@@ -1,4 +1,4 @@
-# React Movie App <a href="<a href="http://example.com/" target="_blank">example</a>" target="_blank">See it live</a>
+# React Movie App [See it live](https://lucky-creponne-6f1bff.netlify.app/)
 ## Description
 This is an interface for a web-app built on react. It allows the user to search for movies from a database and displays the movie title, description, actors and other information about the movie.
 ## Technologies used
