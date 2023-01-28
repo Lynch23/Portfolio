@@ -1,1 +1,2 @@
-This repository holds all my projects built while learning Web Development. Over a period of two and aa half years, I have leart and worked with HTML5, CSS, Javascript ES6, and CSS frameworks Bootstrap and Bulma. I have a year of experience building  with ReactJS. This repository will continue to be updated with future projects.
+# Portfolio
+This repository holds some of my projects built while working with Web Development. Over a period of three(3) and a half years, I have learnt and worked with HTML5, CSS, Javascript ES6, and CSS frameworks Bootstrap and Bulma, React for front-end developement. I have three years of experience building with ReactJS. This repository will continue to be updated with future projects.
