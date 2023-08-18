@@ -3,7 +3,7 @@ const Campground = require('../models/campground');
 const cities = require('./cities');
 const { places, descriptors } = require('./seedHelpers');
 
-mongoose.connect('mongodb://127.0.0.1:27017/yelpCamp', {
+mongoose.connect('mongodb://127.0.0.1:27017/yelpcamp', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -25,12 +25,13 @@ const seedDB = async () => {
             location: `${cities[random].city}, ${cities[random].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
             image: 'https://source.unsplash.com/collection/483251',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, fuga dolorum commodi non velit iure labore laudantium ea? Obcaecati porro voluptatum, facilis ipsa libero rem! Neque sit asperiores unde voluptatibus!',
-            price
+            description: 'Lorem spenu uorui ipsum dolor sit amet consectetur adipisicing elit. Tempora, fuga dolorum commodi non velit iure labore laudantium ea? Obcaecati porro voluptatum, facilis ipsa libero rem! Neque sit asperiores unde voluptatibus!',
+            price,
+            author: '64a01bd46904d8dbf00561d5'
         });
         await camp.save();
     }
 };
 seedDB().then(() => {
-    mongoose.connection.close();
+    console.log('Done')
 });

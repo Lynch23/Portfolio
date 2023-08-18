@@ -16,7 +16,7 @@ const reviewRoutes = require('./routes/reviews');
 const campgroundRoutes = require('./routes/campgrounds');
 const userRoutes = require('./routes/users');
 
-mongoose.connect('mongodb://127.0.0.1:27017/yelpCamp', {
+mongoose.connect('mongodb://127.0.0.1:27017/yelpcamp', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -58,8 +58,10 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.use((req, res, next) => {
+    console.log(req.session);
     res.locals.success = req.flash('success');
     res.locals.error = req.flash('error');
+    res.locals.currentUser = req.user;
     next();
 })
 
